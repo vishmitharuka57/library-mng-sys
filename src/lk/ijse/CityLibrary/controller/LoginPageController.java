@@ -61,7 +61,7 @@ public class LoginPageController {
                 txtRole.setFocusColor(Paint.valueOf("Red"));
                 txtRole.requestFocus();*/
 
-
+            // Vishmi Tharuka He he
 
 
         }
