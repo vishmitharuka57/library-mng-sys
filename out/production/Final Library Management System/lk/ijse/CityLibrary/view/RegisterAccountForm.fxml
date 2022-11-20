@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="485.0" prefWidth="417.0" style="-fx-background-color: #b2bec3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.CityLibrary.controller.RegisterAccountFormController">
+   <children>
+      <Label alignment="CENTER" layoutY="25.0" prefHeight="51.0" prefWidth="418.0" text="Create New Account">
+         <font>
+            <Font name="Comic Sans MS Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="422.0" onMouseClicked="#openLoginPage" prefHeight="27.0" prefWidth="195.0" text="Already have an account?">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <TextField layoutX="28.0" layoutY="112.0" prefHeight="37.0" prefWidth="170.0" promptText="First name" style="-fx-background-color: #f7f1e3;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField layoutX="222.0" layoutY="112.0" prefHeight="37.0" prefWidth="161.0" promptText="Last name" style="-fx-background-color: #f7f1e3;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField layoutX="28.0" layoutY="177.0" prefHeight="37.0" prefWidth="353.0" promptText="Username" style="-fx-background-color: #f7f1e3;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField layoutX="29.0" layoutY="295.0" prefHeight="37.0" prefWidth="170.0" promptText="Password" style="-fx-background-color: #f7f1e3;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField layoutX="219.0" layoutY="295.0" prefHeight="37.0" prefWidth="170.0" promptText="Confirm" style="-fx-background-color: #f7f1e3;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Label layoutX="81.0" layoutY="339.0" prefHeight="27.0" prefWidth="308.0" text="Use 8 or more characters with a mix of letters, numbers &amp; symbols.">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="29.0" layoutY="237.0" prefHeight="37.0" prefWidth="353.0" promptText="Role" style="-fx-background-color: #f7f1e3;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+      <Button layoutX="29.0" layoutY="376.0" mnemonicParsing="false" onAction="#createAndSaveAccount" prefHeight="37.0" prefWidth="361.0" style="-fx-background-color: #3dc1d3;" text="Create Account" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

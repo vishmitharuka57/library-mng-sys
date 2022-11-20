@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="698.0" prefWidth="1364.0" style="-fx-background-color: #F3E642;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.CityLibrary.controller.LoginPageController">
+   <children>
+      <ImageView fitHeight="698.0" fitWidth="1364.0" layoutX="22.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/istockphoto-1301533980-170667a.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="pane1" layoutX="167.0" layoutY="143.0" prefHeight="485.0" prefWidth="389.0" style="-fx-background-color: #fffcb5;">
+         <children>
+            <JFXTextField fx:id="txtUsername" layoutX="83.0" layoutY="119.0" prefHeight="42.0" prefWidth="300.0" promptText="Username">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+            <JFXTextField fx:id="txtPassword" layoutX="83.0" layoutY="186.0" prefHeight="42.0" prefWidth="300.0" promptText="Password">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+            <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="46.0" layoutY="257.0" onAction="#loginOnAction" prefHeight="42.0" prefWidth="327.0" ripplerFill="#464444" style="-fx-background-color: #b71540;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="32.0" fitWidth="33.0" layoutX="38.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-male-user-30.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="38.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-lock-30.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="271.0" layoutY="315.0" onMouseClicked="#fogotPasswordOnAction" prefHeight="21.0" prefWidth="118.0" text="Fogot Password?" textFill="#111111">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label alignment="CENTER" layoutX="11.0" layoutY="31.0" prefHeight="45.0" prefWidth="400.0" text="User Login">
+               <font>
+                  <Font name="Bodoni MT Bold" size="30.0" />
+               </font>
+            </Label>
+            <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="48.0" layoutY="412.0" onAction="#createNewAccountOnAction" prefHeight="42.0" prefWidth="327.0" ripplerFill="#464444" style="-fx-background-color: #38ada9;" text="Create New Account" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label layoutX="198.0" layoutY="341.0" prefHeight="32.0" prefWidth="32.0" text="or">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Separator layoutX="225.0" layoutY="356.0" prefHeight="5.0" prefWidth="167.0" />
+            <Separator layoutX="25.0" layoutY="356.0" prefHeight="5.0" prefWidth="157.0" />
+            <CheckBox layoutX="39.0" layoutY="317.0" mnemonicParsing="false" prefHeight="5.0" prefWidth="184.0" text="Remember Password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </CheckBox>
+            <Label alignment="CENTER" layoutY="373.0" prefHeight="20.0" prefWidth="411.0" text="Don't have an account ?">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="1209.0" layoutY="669.0" prefHeight="32.0" prefWidth="167.0" text="version .0.0" />
+      <Label alignment="CENTER" layoutY="27.0" prefHeight="78.0" prefWidth="903.0" text="Horana Public Library" textFill="#795817">
+         <font>
+            <Font name="Cooper Black" size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="169.0" layoutY="89.0" prefHeight="32.0" prefWidth="317.0" text="The place where your knowledge improves...">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <ImageView fitHeight="87.0" fitWidth="84.0" layoutX="71.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-literature-50.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

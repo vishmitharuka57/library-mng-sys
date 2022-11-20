@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="706.0" prefWidth="1064.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.CityLibrary.controller.BooksManagerPageController">
+   <children>
+      <TableView layoutX="30.0" layoutY="417.0" onSort="#tblBook" prefHeight="264.0" prefWidth="1014.0">
+         <columns>
+            <TableColumn fx:id="colBookId" prefWidth="93.0" text="Book Id" />
+            <TableColumn fx:id="colBookName" prefWidth="268.0" text="Book Name" />
+            <TableColumn fx:id="colAuthor" prefWidth="195.0" text="Author" />
+            <TableColumn fx:id="colLanguage" prefWidth="164.0" text="Language" />
+            <TableColumn fx:id="colNoOfBooks" prefWidth="128.0" text="No. Of Books" />
+            <TableColumn fx:id="colPublication" prefWidth="165.0" text="Publication" />
+         </columns>
+      </TableView>
+      <Separator layoutX="53.0" layoutY="117.0" prefHeight="3.0" prefWidth="955.0" />
+      <Label alignment="CENTER" layoutX="68.0" layoutY="35.0" prefHeight="66.0" prefWidth="659.0" text="Horana Public Library" textFill="#795817">
+         <font>
+            <Font name="Cooper Black" size="45.0" />
+         </font>
+      </Label>
+      <Label layoutX="137.0" layoutY="85.0" prefHeight="32.0" prefWidth="317.0" text="The place where your knowledge improves...">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <ImageView fitHeight="66.0" fitWidth="92.0" layoutX="53.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-literature-50.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="712.0" layoutY="53.0" prefHeight="48.0" prefWidth="308.0" text="( Books  Management )" underline="true">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="55.0" layoutY="143.0" prefHeight="246.0" prefWidth="955.0" style="-fx-background-color: #d1d8e0;">
+         <children>
+            <TextField fx:id="txtid" layoutX="40.0" layoutY="43.0" prefHeight="40.0" prefWidth="260.0" promptText="Book Id">
+               <font>
+                  <Font name="Consolas" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtName" layoutX="350.0" layoutY="43.0" prefHeight="40.0" prefWidth="260.0" promptText="Book Name" />
+            <TextField fx:id="txtLanguage" layoutX="655.0" layoutY="43.0" prefHeight="40.0" prefWidth="260.0" promptText="Language" />
+            <TextField fx:id="txtNoOfPages" layoutX="352.0" layoutY="121.0" prefHeight="40.0" prefWidth="260.0" promptText="No. Of Books" />
+            <TextField fx:id="txtAuthor" layoutX="40.0" layoutY="121.0" prefHeight="40.0" prefWidth="260.0" promptText="Author" />
+            <TextField fx:id="txtPublication" layoutX="655.0" layoutY="121.0" prefHeight="40.0" prefWidth="260.0" promptText="Publication" />
+            <JFXButton buttonType="RAISED" layoutX="639.0" layoutY="191.0" onAction="#saveBookOnAction" prefHeight="41.0" prefWidth="127.0" style="-fx-background-color: #ff7675;" text="Save" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="785.0" layoutY="191.0" onAction="#updateBookOnAction" prefHeight="41.0" prefWidth="127.0" style="-fx-background-color: #00b894;" text="Update" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

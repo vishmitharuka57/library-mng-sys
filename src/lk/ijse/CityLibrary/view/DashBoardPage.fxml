@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="698.0" prefWidth="1364.0" style="-fx-background-color: #ffa801;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.CityLibrary.controller.DashBoardPageController">
+   <children>
+      <AnchorPane fx:id="pane" layoutX="311.0" layoutY="-4.0" prefHeight="706.0" prefWidth="1064.0" style="-fx-background-color: #eeede7;">
+         <children>
+            <Label layoutX="33.0" layoutY="130.0" prefHeight="142.0" prefWidth="235.0" style="-fx-background-color: #0652DD;" text="  0" textFill="#f2efef">
+               <font>
+                  <Font name="System Bold" size="44.0" />
+               </font>
+            </Label>
+            <Text fill="#f5eded" layoutX="59.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Available Books" wrappingWidth="198.99999178946018">
+               <font>
+                  <Font name="Britannic Bold" size="26.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="81.0" fitWidth="82.0" layoutX="170.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-literature-50.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="279.0" layoutY="130.0" prefHeight="142.0" prefWidth="235.0" style="-fx-background-color: #ED4C67;" text="  0" textFill="#f2efef">
+               <font>
+                  <Font name="System Bold" size="44.0" />
+               </font>
+            </Label>
+            <Text fill="#f5eded" layoutX="310.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Members" wrappingWidth="184.99999178946018">
+               <font>
+                  <Font name="Britannic Bold" size="26.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="99.0" fitWidth="92.0" layoutX="404.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-member-50.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="535.0" layoutY="130.0" prefHeight="142.0" prefWidth="235.0" style="-fx-background-color: #F79F1F;" text="  0" textFill="#f2efef">
+               <font>
+                  <Font name="System Bold" size="44.0" />
+               </font>
+            </Label>
+            <Text fill="#f5eded" layoutX="571.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Borrowed Books" wrappingWidth="198.99999178946018">
+               <font>
+                  <Font name="Britannic Bold" size="26.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="98.0" fitWidth="92.0" layoutX="651.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/2412142-200.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="796.0" layoutY="130.0" prefHeight="142.0" prefWidth="235.0" style="-fx-background-color: #009432;" text="  0" textFill="#f2efef">
+               <font>
+                  <Font name="System Bold" size="44.0" />
+               </font>
+            </Label>
+            <Text fill="#f5eded" layoutX="822.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Donors" wrappingWidth="198.99999178946018">
+               <font>
+                  <Font name="Britannic Bold" size="26.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="92.0" fitWidth="109.0" layoutX="914.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-charity-50.png" />
+               </image>
+            </ImageView>
+            <TableView layoutX="27.0" layoutY="291.0" prefHeight="384.0" prefWidth="782.0">
+               <columns>
+                  <TableColumn fx:id="colBookId" prefWidth="91.00003051757812" text="Book Id" />
+                  <TableColumn fx:id="colMemberId" prefWidth="104.0" text="Member Id" />
+                  <TableColumn fx:id="colBorrowId" prefWidth="100.0" text="Borrow Id" />
+                  <TableColumn fx:id="colStatus" prefWidth="132.0" text="Status" />
+                  <TableColumn fx:id="colBorrowDate" prefWidth="122.0" text="Borrow Date" />
+                  <TableColumn fx:id="colReturnDate" prefWidth="123.0" text="Return Date" />
+                  <TableColumn fx:id="colFineId" prefWidth="109.0" text="Fine Id" />
+               </columns>
+            </TableView>
+            <Label layoutX="814.0" layoutY="338.0" prefHeight="295.0" prefWidth="235.0" style="-fx-background-color: #9AECDB;" />
+            <JFXButton layoutX="828.0" layoutY="381.0" prefHeight="42.0" prefWidth="212.0" style="-fx-background-color: #38ada9;" text="Book Report" textFill="#f8efef">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="828.0" layoutY="442.0" prefHeight="42.0" prefWidth="212.0" style="-fx-background-color: #38ada9;" text="Salary Report" textFill="#f8efef">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="828.0" layoutY="502.0" prefHeight="42.0" prefWidth="212.0" style="-fx-background-color: #38ada9;" text="expenditure Report" textFill="#f8efef">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="828.0" layoutY="561.0" prefHeight="42.0" prefWidth="212.0" style="-fx-background-color: #38ada9;" text="Donor List Report" textFill="#f8efef">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </JFXButton>
+            <Label alignment="CENTER" layoutX="41.0" layoutY="20.0" prefHeight="66.0" prefWidth="659.0" text="Horana Public Library" textFill="#795817">
+               <font>
+                  <Font name="Cooper Black" size="45.0" />
+               </font>
+            </Label>
+            <Label layoutX="110.0" layoutY="70.0" prefHeight="32.0" prefWidth="317.0" text="The place where your knowledge improves...">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <ImageView fitHeight="66.0" fitWidth="92.0" layoutX="26.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-literature-50.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="732.0" layoutY="14.0" prefHeight="28.0" prefWidth="153.0" text="2022 - 11 - 16">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="931.0" layoutY="14.0" prefHeight="32.0" prefWidth="123.0" text="06.45.00">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+            </Label>
+            <JFXTextField layoutX="703.0" layoutY="79.0" prefHeight="32.0" prefWidth="317.0" promptText="Search" />
+            <ImageView fitHeight="26.0" fitWidth="32.0" layoutX="993.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-search-48.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="100.0" fitWidth="109.0" layoutX="31.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-manager-100.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutY="130.0" onAction="#dashboardOnAction" prefHeight="42.0" prefWidth="310.0" ripplerFill="#1e1e1c" style="-fx-background-color: #fffa65;" text="DashBoard">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="26.0" fitWidth="33.0" layoutX="27.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8speed.png" />
+         </image>
+      </ImageView>
+      <JFXButton alignment="BOTTOM_CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutY="182.0" onAction="#userManagerOnAction" prefHeight="42.0" prefWidth="310.0" ripplerFill="#1e1e1b" style="-fx-background-color: #fffa65;" text="Users Manager" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutY="234.0" onAction="#memberManagerOnAction" prefHeight="42.0" prefWidth="310.0" ripplerFill="#1e1e1b" style="-fx-background-color: #fffa65;" text="     Member Manager" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="25.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-member-50.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="26.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-male-user-30.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" contentDisplay="CENTER" layoutY="286.0" onAction="#booksManagerOnAction" prefHeight="42.0" prefWidth="310.0" ripplerFill="#1e1e1b" style="-fx-background-color: #fffa65;" text=" Books Manager" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="23.0" layoutY="304.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-literature-50.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutY="338.0" onAction="#CategoryManagerOnAction" prefHeight="42.0" prefWidth="310.0" ripplerFill="#1e1e1b" style="-fx-background-color: #fffa65;" text="      Category manager">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="21.0" layoutY="352.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-dashboard-layout-48.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutY="390.0" onAction="#borrowingDetailOnAction" prefHeight="42.0" prefWidth="310.0" ripplerFill="#1e1e1b" style="-fx-background-color: #fffa65;" text="     Borrowing Details">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="17.0" layoutY="404.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-buying-30.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutY="442.0" onAction="#employeeManagerOnAction" prefHeight="42.0" prefWidth="310.0" style="-fx-background-color: #fffa65;" text="      Employee Manager">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="18.0" layoutY="456.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-employees-64.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" contentDisplay="CENTER" layoutY="494.0" onAction="#SalaryManagerOnAction" prefHeight="42.0" prefWidth="310.0" ripplerFill="#1e1e1b" style="-fx-background-color: #fffa65;" text=" Salary Manager" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="21.0" layoutY="507.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-salary-68.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutY="546.0" onAction="#donationManagerOnAction" prefHeight="42.0" prefWidth="310.0" ripplerFill="#1e1e1b" style="-fx-background-color: #fffa65;" text="   Donation Manager">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="14.0" layoutY="561.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-handshake-60.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutY="598.0" onAction="#expenditureManagerOnAction" prefHeight="42.0" prefWidth="310.0" style="-fx-background-color: #fffa65;" text="     Expenditure Manager">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="11.0" layoutY="608.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-cost-30.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutY="650.0" onAction="#finesManagerOnAction" prefHeight="42.0" prefWidth="310.0" style="-fx-background-color: #fffa65;" text="Fines Manager">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="14.0" layoutY="660.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-coins-50.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="adminpane" layoutX="135.0" layoutY="91.0" prefHeight="100.0" prefWidth="172.0" />
+      <ToggleButton layoutX="138.0" layoutY="52.0" mnemonicParsing="false" onAction="#adminOnAction" prefHeight="32.0" prefWidth="167.0" selected="true" style="-fx-background-color: #218c74;" text="Admin" textFill="#f5f0f0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ToggleButton>
+   </children>
+</AnchorPane>
