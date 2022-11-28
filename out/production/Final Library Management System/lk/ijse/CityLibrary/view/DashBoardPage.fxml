@@ -17,7 +17,7 @@
    <children>
       <AnchorPane fx:id="pane" layoutX="311.0" layoutY="-4.0" prefHeight="706.0" prefWidth="1064.0" style="-fx-background-color: #eeede7;">
          <children>
-            <Label layoutX="33.0" layoutY="130.0" prefHeight="142.0" prefWidth="235.0" style="-fx-background-color: #0652DD;" text="  0" textFill="#f2efef">
+            <Label layoutX="33.0" layoutY="130.0" prefHeight="142.0" prefWidth="235.0" style="-fx-background-color: #0652DD; -fx-background-radius: 32;" text="  0" textFill="#f2efef">
                <font>
                   <Font name="System Bold" size="44.0" />
                </font>
@@ -32,7 +32,7 @@
                   <Image url="@../assets/icons8-literature-50.png" />
                </image>
             </ImageView>
-            <Label layoutX="279.0" layoutY="130.0" prefHeight="142.0" prefWidth="235.0" style="-fx-background-color: #ED4C67;" text="  0" textFill="#f2efef">
+            <Label layoutX="279.0" layoutY="130.0" prefHeight="142.0" prefWidth="235.0" style="-fx-background-color: #ED4C67; -fx-background-radius: 32;" text="  0" textFill="#f2efef">
                <font>
                   <Font name="System Bold" size="44.0" />
                </font>
@@ -47,7 +47,7 @@
                   <Image url="@../assets/icons8-member-50.png" />
                </image>
             </ImageView>
-            <Label layoutX="535.0" layoutY="130.0" prefHeight="142.0" prefWidth="235.0" style="-fx-background-color: #F79F1F;" text="  0" textFill="#f2efef">
+            <Label layoutX="535.0" layoutY="130.0" prefHeight="142.0" prefWidth="235.0" style="-fx-background-color: #F79F1F; -fx-background-radius: 32;" text="  0" textFill="#f2efef">
                <font>
                   <Font name="System Bold" size="44.0" />
                </font>
@@ -62,7 +62,7 @@
                   <Image url="@../assets/2412142-200.png" />
                </image>
             </ImageView>
-            <Label layoutX="796.0" layoutY="130.0" prefHeight="142.0" prefWidth="235.0" style="-fx-background-color: #009432;" text="  0" textFill="#f2efef">
+            <Label layoutX="796.0" layoutY="130.0" prefHeight="142.0" prefWidth="235.0" style="-fx-background-color: #009432; -fx-background-radius: 32;" text="  0" textFill="#f2efef">
                <font>
                   <Font name="System Bold" size="44.0" />
                </font>
@@ -88,7 +88,7 @@
                   <TableColumn fx:id="colFineId" prefWidth="109.0" text="Fine Id" />
                </columns>
             </TableView>
-            <Label layoutX="814.0" layoutY="338.0" prefHeight="295.0" prefWidth="235.0" style="-fx-background-color: #9AECDB;" />
+            <Label layoutX="814.0" layoutY="338.0" prefHeight="295.0" prefWidth="235.0" style="-fx-background-color: #9AECDB; -fx-background-radius: 32;" />
             <JFXButton layoutX="828.0" layoutY="381.0" prefHeight="42.0" prefWidth="212.0" style="-fx-background-color: #38ada9;" text="Book Report" textFill="#f8efef">
                <font>
                   <Font name="System Bold" size="19.0" />
@@ -127,12 +127,12 @@
                   <Image url="@../assets/icons8-literature-50.png" />
                </image>
             </ImageView>
-            <Label layoutX="732.0" layoutY="14.0" prefHeight="28.0" prefWidth="153.0" text="2022 - 11 - 16">
+            <Label fx:id="lblSetDate" layoutX="700.0" layoutY="14.0" prefHeight="32.0" prefWidth="167.0">
                <font>
                   <Font name="System Bold Italic" size="22.0" />
                </font>
             </Label>
-            <Label layoutX="931.0" layoutY="14.0" prefHeight="32.0" prefWidth="123.0" text="06.45.00">
+            <Label fx:id="lblSetTime" layoutX="887.0" layoutY="14.0" prefHeight="32.0" prefWidth="167.0">
                <font>
                   <Font name="System Bold Italic" size="22.0" />
                </font>
@@ -294,7 +294,7 @@
          </image>
       </ImageView>
       <AnchorPane fx:id="adminpane" layoutX="135.0" layoutY="91.0" prefHeight="100.0" prefWidth="172.0" />
-      <ToggleButton layoutX="138.0" layoutY="52.0" mnemonicParsing="false" onAction="#adminOnAction" prefHeight="32.0" prefWidth="167.0" selected="true" style="-fx-background-color: #218c74;" text="Admin" textFill="#f5f0f0">
+      <ToggleButton layoutX="138.0" layoutY="52.0" mnemonicParsing="false" onAction="#adminOnAction" prefHeight="32.0" prefWidth="167.0" selected="true" style="-fx-background-color: #218c74; -fx-background-radius: 22;" text="Admin" textFill="#f5f0f0">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>

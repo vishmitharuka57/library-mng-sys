@@ -1,17 +1,17 @@
 package lk.ijse.CityLibrary.to;
 
-public class BookCategory {
+public class Category {
     private String categoryId;
     private String categoryName;
-    private String bookId ;
+    private String bookId;
     private String bookName;
-    private int noOfPages ;
-    private String ageLevel ;
+    private int noOfPages;
+    private int ageLevel;
 
-    public BookCategory(String categoryId, String categoryName, String bookId, String bookName, int noOfPages, String ageLevel) {
+    public Category() {
     }
 
-    public BookCategory(String categoryId) {
+    public Category(String categoryId, String categoryName, String bookId, String bookName, int noOfPages, int ageLevel) {
         this.categoryId = categoryId;
         this.categoryName = categoryName;
         this.bookId = bookId;
@@ -60,17 +60,17 @@ public class BookCategory {
         this.noOfPages = noOfPages;
     }
 
-    public String getAgeLevel() {
+    public int getAgeLevel() {
         return ageLevel;
     }
 
-    public void setAgeLevel(String ageLevel) {
+    public void setAgeLevel(int ageLevel) {
         this.ageLevel = ageLevel;
     }
 
     @Override
     public String toString() {
-        return "BookCategory{" +
+        return "Category{" +
                 "categoryId='" + categoryId + '\'' +
                 ", categoryName='" + categoryName + '\'' +
                 ", bookId='" + bookId + '\'' +

@@ -80,7 +80,7 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employee{" +
+        return "EmployeeModel{" +
                 "empId='" + empId + '\'' +
                 ", empName='" + empName + '\'' +
                 ", department='" + department + '\'' +

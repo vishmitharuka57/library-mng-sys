@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="706.0" prefWidth="1064.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.CityLibrary.controller.EmployeeManagerPageController">
+<AnchorPane fx:id="pane" prefHeight="706.0" prefWidth="1064.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.CityLibrary.controller.EmployeeManagerPageController">
    <children>
       <Separator layoutX="63.0" layoutY="128.0" prefHeight="2.0" prefWidth="926.0" />
       <Label alignment="CENTER" layoutX="78.0" layoutY="45.0" prefHeight="66.0" prefWidth="659.0" text="Horana Public Library" textFill="#795817">
@@ -38,36 +38,36 @@
             <Font name="System Bold" size="23.0" />
          </font>
       </Label>
-      <TableView layoutX="40.0" layoutY="437.0" onSort="#tblBook" prefHeight="254.0" prefWidth="1014.0">
+      <TableView fx:id="tblEmployee" layoutX="40.0" layoutY="437.0" prefHeight="254.0" prefWidth="1014.0">
          <columns>
-            <TableColumn fx:id="colBookId" prefWidth="93.0" text="Employee Id" />
-            <TableColumn fx:id="colBookName" prefWidth="171.0" text="Employee Name" />
-            <TableColumn fx:id="colAuthor" prefWidth="170.0" text="Department" />
-            <TableColumn fx:id="colLanguage" prefWidth="154.0" text="DOB (dd/mm/yyyy)" />
-            <TableColumn fx:id="colNoOfBooks" prefWidth="138.0" text="NIC" />
-            <TableColumn fx:id="colPublication" prefWidth="113.0" text="Address" />
-            <TableColumn fx:id="colPublication1" prefWidth="182.0" text="Description" />
+            <TableColumn fx:id="colEmpId" prefWidth="93.0" text="Employee Id" />
+            <TableColumn fx:id="colEmpName" prefWidth="171.0" text="Employee Name" />
+            <TableColumn fx:id="colDepartment" prefWidth="170.0" text="Department" />
+            <TableColumn fx:id="colDob" prefWidth="154.0" text="DOB (dd/mm/yyyy)" />
+            <TableColumn fx:id="colNic" prefWidth="138.0" text="NIC" />
+            <TableColumn fx:id="colAddress" prefWidth="113.0" text="Address" />
+            <TableColumn fx:id="colDescription" prefWidth="182.0" text="Description" />
          </columns>
       </TableView>
       <AnchorPane layoutX="58.0" layoutY="140.0" prefHeight="281.0" prefWidth="926.0" style="-fx-background-color: #d1d8e0;">
          <children>
-            <TextField fx:id="txtName" layoutX="488.0" layoutY="33.0" prefHeight="40.0" prefWidth="326.0" promptText="Employee Name" />
-            <TextField fx:id="txtLanguage" layoutX="488.0" layoutY="91.0" prefHeight="40.0" prefWidth="326.0" promptText="DOB (dd/mm/yyyy)" />
-            <TextField fx:id="txtPublication" layoutX="488.0" layoutY="149.0" prefHeight="40.0" prefWidth="326.0" promptText="Address" />
-            <TextField fx:id="txtid" layoutX="67.0" layoutY="31.0" prefHeight="40.0" prefWidth="326.0" promptText="Employee Id">
+            <TextField fx:id="txtEmpName" layoutX="488.0" layoutY="33.0" prefHeight="40.0" prefWidth="326.0" promptText="Employee Name" />
+            <TextField fx:id="txtDob" layoutX="488.0" layoutY="91.0" prefHeight="40.0" prefWidth="326.0" promptText="DOB (dd/mm/yyyy)" />
+            <TextField fx:id="txtAddress" layoutX="488.0" layoutY="149.0" prefHeight="40.0" prefWidth="326.0" promptText="Address" />
+            <TextField fx:id="txtEmpId" layoutX="67.0" layoutY="31.0" prefHeight="40.0" prefWidth="326.0" promptText="Employee Id">
                <font>
                   <Font name="Consolas" size="12.0" />
                </font>
             </TextField>
-            <TextField fx:id="txtAuthor" layoutX="67.0" layoutY="89.0" prefHeight="40.0" prefWidth="326.0" promptText="Department" />
-            <TextField fx:id="txtNoOfPages" layoutX="67.0" layoutY="149.0" prefHeight="40.0" prefWidth="326.0" promptText="NIC" />
-            <TextField fx:id="txtNoOfPages1" layoutX="67.0" layoutY="207.0" prefHeight="40.0" prefWidth="326.0" promptText="Description" />
-            <JFXButton buttonType="RAISED" layoutX="767.0" layoutY="209.0" onAction="#updateBookOnAction" prefHeight="41.0" prefWidth="127.0" style="-fx-background-color: #00b894;" text="Update" textFill="WHITE">
+            <TextField fx:id="txtDepartment" layoutX="67.0" layoutY="89.0" prefHeight="40.0" prefWidth="326.0" promptText="Department" />
+            <TextField fx:id="txtNic" layoutX="67.0" layoutY="149.0" prefHeight="40.0" prefWidth="326.0" promptText="NIC" />
+            <TextField fx:id="txtDescription" layoutX="67.0" layoutY="207.0" prefHeight="40.0" prefWidth="326.0" promptText="Description" />
+            <JFXButton buttonType="RAISED" layoutX="767.0" layoutY="209.0" onAction="#btnUpdateOnAction" prefHeight="41.0" prefWidth="127.0" style="-fx-background-color: #00b894;" text="Update" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="616.0" layoutY="210.0" onAction="#addBookOnAction" prefHeight="41.0" prefWidth="127.0" style="-fx-background-color: #ff7675;" text="Save" textFill="WHITE">
+            <JFXButton buttonType="RAISED" layoutX="616.0" layoutY="210.0" onAction="#btnSaveOnAction" prefHeight="41.0" prefWidth="127.0" style="-fx-background-color: #ff7675;" text="Save" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>

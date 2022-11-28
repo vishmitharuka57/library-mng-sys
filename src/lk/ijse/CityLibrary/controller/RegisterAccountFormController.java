@@ -4,7 +4,6 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import lk.ijse.CityLibrary.model.UserModel;
 import lk.ijse.CityLibrary.to.User;
@@ -15,6 +14,9 @@ import java.io.IOException;
 import java.sql.SQLException;
 
 public class RegisterAccountFormController {
+
+    @FXML
+    private AnchorPane pane;
     @FXML
     private AnchorPane pane2;
 
@@ -22,7 +24,7 @@ public class RegisterAccountFormController {
     private TextField txtName;
 
     @FXML
-    private TextField txtUsername;
+    private TextField txtUserName;
 
     @FXML
     private TextField txtPassword;
@@ -43,13 +45,16 @@ public class RegisterAccountFormController {
     @FXML
     private TextField txtAddress;
 
-    public void openLoginPage(MouseEvent mouseEvent) {
+    @FXML
+    void loginPageOnAction(ActionEvent event) throws IOException {
+        Navigation.navigate(Routes.LOGOUT, pane2);
     }
+
 
     public void createAndSaveAccount(ActionEvent actionEvent) throws IOException, RuntimeException {
          String name = txtName.getText();
          String userId = txtUserId.getText();
-         String userName = txtUsername.getText();
+         String userName = txtUserName.getText();
          String role = txtRole.getText();
          String nic = txtNic.getText();
          String address = txtAddress.getText();
@@ -70,6 +75,6 @@ public class RegisterAccountFormController {
         } catch (SQLException | ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
-        Navigation.navigate(Routes.DASHBOARDPAGE, pane2);
+
     }
 }

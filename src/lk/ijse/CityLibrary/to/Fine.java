@@ -1,16 +1,16 @@
 package lk.ijse.CityLibrary.to;
 
 public class Fine {
-   private String fineId;
+    private String fineId;
     private String memberId ;
     private String bookId ;
     private String borrowedDate;
     private String returnedDate ;
     private int  NoOfDays ;
-    double amount;
-    boolean paidOrNot;
+    private double amount;
+    private boolean paidOrNot;
 
-    public Fine() {
+    public Fine(String string, String rstString, String bookId, String borrowedDate, String returnedDate, String s, String string1, String rstString1) {
     }
 
     public Fine(String fineId, String memberId, String bookId, String borrowedDate, String returnedDate, int noOfDays, double amount, boolean paidOrNot) {
@@ -70,6 +70,22 @@ public class Fine {
 
     public void setNoOfDays(int noOfDays) {
         NoOfDays = noOfDays;
+    }
+
+    public double getAmount() {
+        return amount;
+    }
+
+    public void setAmount(double amount) {
+        this.amount = amount;
+    }
+
+    public boolean isPaidOrNot() {
+        return paidOrNot;
+    }
+
+    public void setPaidOrNot(boolean paidOrNot) {
+        this.paidOrNot = paidOrNot;
     }
 
     @Override

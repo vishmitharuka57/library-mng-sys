@@ -38,36 +38,36 @@
             <Font name="System Bold" size="23.0" />
          </font>
       </Label>
-      <TableView layoutX="25.0" layoutY="433.0" onSort="#tblBook" prefHeight="235.0" prefWidth="1014.0">
+      <TableView fx:id="tblDonation" layoutX="25.0" layoutY="433.0" prefHeight="235.0" prefWidth="1014.0">
          <columns>
-            <TableColumn fx:id="colBookId" prefWidth="93.0" text="Donation Id" />
-            <TableColumn fx:id="colBookName" prefWidth="171.0" text="Donor's Name" />
-            <TableColumn fx:id="colAuthor" prefWidth="170.0" text="Address" />
-            <TableColumn fx:id="colLanguage" prefWidth="154.0" text="NIC" />
-            <TableColumn fx:id="colNoOfBooks" prefWidth="138.0" text="Name Of Book" />
-            <TableColumn fx:id="colPublication" prefWidth="113.0" text="Book Id" />
-            <TableColumn fx:id="colPublication1" prefWidth="171.0" text="Category" />
+            <TableColumn fx:id="colDonationId" prefWidth="93.0" text="Donation Id" />
+            <TableColumn fx:id="colDonorName" prefWidth="171.0" text="Donor's Name" />
+            <TableColumn fx:id="colDonorAddress" prefWidth="170.0" text="Address" />
+            <TableColumn fx:id="colDonorNic" prefWidth="154.0" text="NIC" />
+            <TableColumn fx:id="colBookName" prefWidth="138.0" text="Name Of Book" />
+            <TableColumn fx:id="colBookId" prefWidth="113.0" text="Book Id" />
+            <TableColumn fx:id="colBookCategory" prefWidth="171.0" text="Category" />
          </columns>
       </TableView>
       <AnchorPane layoutX="73.0" layoutY="152.0" prefHeight="263.0" prefWidth="884.0" style="-fx-background-color: #d1d8e0;">
          <children>
-            <TextField fx:id="txtName" layoutX="490.0" layoutY="26.0" prefHeight="40.0" prefWidth="326.0" promptText="Donor's Name" />
-            <TextField fx:id="txtLanguage" layoutX="69.0" layoutY="142.0" prefHeight="40.0" prefWidth="326.0" promptText="Name Of Book" />
-            <TextField fx:id="txtPublication" layoutX="490.0" layoutY="142.0" prefHeight="40.0" prefWidth="326.0" promptText="Book Id" />
-            <TextField fx:id="txtid" layoutX="69.0" layoutY="24.0" prefHeight="40.0" prefWidth="326.0" promptText="Donation Id">
+            <TextField fx:id="txtDonorName" layoutX="490.0" layoutY="26.0" prefHeight="40.0" prefWidth="326.0" promptText="Donor's Name" />
+            <TextField fx:id="txtBookName" layoutX="69.0" layoutY="142.0" prefHeight="40.0" prefWidth="326.0" promptText="Name Of Book" />
+            <TextField fx:id="txtBookId" layoutX="490.0" layoutY="142.0" prefHeight="40.0" prefWidth="326.0" promptText="Book Id" />
+            <TextField fx:id="txtDonationId" layoutX="69.0" layoutY="24.0" prefHeight="40.0" prefWidth="326.0" promptText="Donation Id">
                <font>
                   <Font name="Consolas" size="12.0" />
                </font>
             </TextField>
-            <TextField fx:id="txtAuthor" layoutX="69.0" layoutY="82.0" prefHeight="40.0" prefWidth="326.0" promptText="Address" />
-            <TextField fx:id="txtNoOfPages" layoutX="69.0" layoutY="202.0" prefHeight="40.0" prefWidth="326.0" promptText="Category" />
-            <TextField fx:id="txtNoOfPages1" layoutX="490.0" layoutY="86.0" prefHeight="40.0" prefWidth="326.0" promptText="NIC" />
-            <JFXButton buttonType="RAISED" layoutX="653.0" layoutY="202.0" onAction="#updateBookOnAction" prefHeight="41.0" prefWidth="127.0" style="-fx-background-color: #00b894;" text="Update" textFill="WHITE">
+            <TextField fx:id="txtAddress" layoutX="69.0" layoutY="82.0" prefHeight="40.0" prefWidth="326.0" promptText="Address" />
+            <TextField fx:id="txtBookCategory" layoutX="69.0" layoutY="202.0" prefHeight="40.0" prefWidth="326.0" promptText="Category" />
+            <TextField fx:id="txtDonorNic" layoutX="490.0" layoutY="86.0" prefHeight="40.0" prefWidth="326.0" promptText="NIC" />
+            <JFXButton buttonType="RAISED" layoutX="653.0" layoutY="202.0" onAction="#btnUpdateBookOnAction" prefHeight="41.0" prefWidth="127.0" style="-fx-background-color: #00b894;" text="Update" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="502.0" layoutY="202.0" onAction="#addBookOnAction" prefHeight="41.0" prefWidth="127.0" style="-fx-background-color: #ff7675;" text="Save" textFill="WHITE">
+            <JFXButton buttonType="RAISED" layoutX="502.0" layoutY="202.0" onAction="#btnSaveBookOnAction" prefHeight="41.0" prefWidth="127.0" style="-fx-background-color: #ff7675;" text="Save" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>

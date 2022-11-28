@@ -9,7 +9,7 @@
 
 <AnchorPane fx:id="pane2" prefHeight="573.0" prefWidth="446.0" style="-fx-background-color: #b2bec3;"
             xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="lk.ijse.CityLibrary.controller.RegisterAccountFormController">
+            fx:controller="lk.ijse.CityLibrary.controller.UpdateAccountFormController">
    <Label alignment="CENTER" layoutX="9.0" layoutY="7.0" prefHeight="51.0" prefWidth="429.0" text="Create New Account">
       <font>
          <Font name="Comic Sans MS Bold" size="28.0"/>

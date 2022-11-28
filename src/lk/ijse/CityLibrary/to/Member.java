@@ -1,22 +1,20 @@
 package lk.ijse.CityLibrary.to;
 
-import java.util.Date;
-
 public class Member {
     private String memberId;
-    private String nic;
-    private String name ;
-    private Date dob;
+    private String memberName;
+    private String nic ;
+    private String dob;
     private String address;
     private String mobile;
 
-    public Member() {
+    public Member(String empId, String empName, String department, String dob, String nic, String address, String description) {
     }
 
-    public Member(String memberId, String nic, String name, Date dob, String address, String mobile) {
+    public Member(String memberId, String memberName, String nic, String dob, String address, String mobile) {
         this.memberId = memberId;
+        this.memberName = memberName;
         this.nic = nic;
-        this.name = name;
         this.dob = dob;
         this.address = address;
         this.mobile = mobile;
@@ -30,6 +28,14 @@ public class Member {
         this.memberId = memberId;
     }
 
+    public String getMemberName() {
+        return memberName;
+    }
+
+    public void setMemberName(String memberName) {
+        this.memberName = memberName;
+    }
+
     public String getNic() {
         return nic;
     }
@@ -38,19 +44,11 @@ public class Member {
         this.nic = nic;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Date getDob() {
+    public String getDob() {
         return dob;
     }
 
-    public void setDob(Date dob) {
+    public void setDob(String dob) {
         this.dob = dob;
     }
 
@@ -74,9 +72,9 @@ public class Member {
     public String toString() {
         return "Member{" +
                 "memberId='" + memberId + '\'' +
+                ", memberName='" + memberName + '\'' +
                 ", nic='" + nic + '\'' +
-                ", name='" + name + '\'' +
-                ", dob=" + dob +
+                ", dob='" + dob + '\'' +
                 ", address='" + address + '\'' +
                 ", mobile='" + mobile + '\'' +
                 '}';

@@ -51,7 +51,7 @@ public class Navigation {
                 break;
 
             case SALARY:
-                window.setTitle("Employee Salary Management Page");
+                window.setTitle("EmployeeModel Salary Management Page");
                 initUI("SalaryManagerPage.fxml");
                 break;
 
@@ -70,7 +70,7 @@ public class Navigation {
                 break;
 
             case EMPLOYEE:
-                window.setTitle("Employee Management Page");
+                window.setTitle("EmployeeModel Management Page");
                 initUI("EmployeeManagerPage.fxml");
                 break;
 
@@ -92,6 +92,10 @@ public class Navigation {
             case ATTENDANCE:
                 window.setTitle("Attendance Management Page");
                 initUI("AttendenceManagePage.fxml");
+                break;
+
+            case UPDATE:
+                initUI("UpdateAccountForm.fxml");
                 break;
 
             default:

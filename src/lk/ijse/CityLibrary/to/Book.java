@@ -3,19 +3,19 @@ package lk.ijse.CityLibrary.to;
 public class Book {
     private String bookId;
     private String bookName;
-    private String author;
     private String language;
+    private String author;
     private int noOfBooks;
     private String publication;
 
-    public Book() {
+    public Book(String bookId, String bookName, String language, String author, String noOfBooks, String publication) {
     }
 
-    public Book(String bookId, String bookName, String author, String language, int noOfBooks, String publication) {
+    public Book(String bookId, String bookName, String language, String author, int noOfBooks, String publication) {
         this.bookId = bookId;
         this.bookName = bookName;
-        this.author = author;
         this.language = language;
+        this.author = author;
         this.noOfBooks = noOfBooks;
         this.publication = publication;
     }
@@ -36,20 +36,20 @@ public class Book {
         this.bookName = bookName;
     }
 
-    public String getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(String author) {
-        this.author = author;
-    }
-
     public String getLanguage() {
         return language;
     }
 
     public void setLanguage(String language) {
         this.language = language;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
     }
 
     public int getNoOfBooks() {
@@ -73,8 +73,8 @@ public class Book {
         return "Book{" +
                 "bookId='" + bookId + '\'' +
                 ", bookName='" + bookName + '\'' +
-                ", author='" + author + '\'' +
                 ", language='" + language + '\'' +
+                ", author='" + author + '\'' +
                 ", noOfBooks=" + noOfBooks +
                 ", publication='" + publication + '\'' +
                 '}';

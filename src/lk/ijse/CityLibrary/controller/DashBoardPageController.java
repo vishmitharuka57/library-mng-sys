@@ -9,8 +9,12 @@ import lk.ijse.CityLibrary.util.Routes;
 
 import java.awt.*;
 import java.io.IOException;
+import java.time.LocalDate;
+import java.time.LocalTime;
 
 public class DashBoardPageController {
+    public javafx.scene.control.Label lblSetDate;
+    public javafx.scene.control.Label lblSetTime;
     @FXML
     private AnchorPane pane;
 
@@ -49,6 +53,22 @@ public class DashBoardPageController {
 
     @FXML
     private AnchorPane adminpane;
+
+    public void initialize()  {
+        setDate();
+        setTime();
+    }
+
+    private void setDate() {
+//        LocalDate date = LocalDate.now();
+//        lblOrderDate.setText(String.valueOf(date));
+        lblSetDate.setText(String.valueOf(LocalDate.now()));
+    }
+    private void setTime() {
+//        LocalDate date = LocalDate.now();
+//        lblOrderDate.setText(String.valueOf(date));
+        lblSetTime.setText(String.valueOf(LocalTime.now()));
+    }
 
     @FXML
     void CategoryManagerOnAction(ActionEvent event) throws IOException {

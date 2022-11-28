@@ -15,14 +15,14 @@
 <AnchorPane prefHeight="706.0" prefWidth="1064.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.CityLibrary.controller.MemberPageController">
    <children>
       <Separator layoutX="43.0" layoutY="107.0" prefHeight="0.0" prefWidth="874.0" />
-      <TableView layoutX="65.0" layoutY="348.0" prefHeight="312.0" prefWidth="936.0">
+      <TableView fx:id="tblMemberDetail" layoutX="65.0" layoutY="348.0" prefHeight="312.0" prefWidth="936.0">
          <columns>
-            <TableColumn prefWidth="138.0" text="Member Id" />
-            <TableColumn prefWidth="172.0" text="Member Id" />
-            <TableColumn prefWidth="170.0" text="NIC" />
-            <TableColumn prefWidth="162.0" text="DOB" />
-            <TableColumn prefWidth="148.0" text="Address" />
-            <TableColumn prefWidth="145.0" text="mobile" />
+            <TableColumn fx:id="colMemberId" prefWidth="138.0" text="Member Id" />
+            <TableColumn fx:id="colMemberName" prefWidth="172.0" text="Member Name" />
+            <TableColumn fx:id="colMemberNic" prefWidth="170.0" text="NIC" />
+            <TableColumn fx:id="colMemberDob" prefWidth="162.0" text="DOB" />
+            <TableColumn fx:id="colMemberAddress" prefWidth="148.0" text="Address" />
+            <TableColumn fx:id="colMemberMobile" prefWidth="145.0" text="mobile" />
          </columns>
       </TableView>
       <Label alignment="CENTER" layoutX="715.0" layoutY="33.0" prefHeight="48.0" prefWidth="308.0" text="( Member  Management )" underline="true">
@@ -50,42 +50,42 @@
       </ImageView>
       <AnchorPane layoutX="44.0" layoutY="114.0" prefHeight="219.0" prefWidth="971.0" style="-fx-background-color: #d1d8e0;">
          <children>
-            <JFXButton buttonType="RAISED" layoutX="680.0" layoutY="157.0" prefHeight="41.0" prefWidth="127.0" style="-fx-background-color: #ff7675;" text="Save" textFill="WHITE">
+            <JFXButton buttonType="RAISED" layoutX="680.0" layoutY="157.0" onAction="#btnSaveOnAction" prefHeight="41.0" prefWidth="127.0" style="-fx-background-color: #ff7675;" text="Save" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="818.0" layoutY="157.0" prefHeight="41.0" prefWidth="127.0" style="-fx-background-color: #00b894;" text="Update" textFill="WHITE">
+            <JFXButton buttonType="RAISED" layoutX="818.0" layoutY="157.0" onAction="#btnUpdateOnAction" prefHeight="41.0" prefWidth="127.0" style="-fx-background-color: #00b894;" text="Update" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </JFXButton>
-            <TextField layoutX="14.0" layoutY="45.0" prefHeight="32.0" prefWidth="285.0" promptText="Member Id">
+            <TextField fx:id="txtMemberId" layoutX="14.0" layoutY="45.0" prefHeight="32.0" prefWidth="285.0" promptText="Member Id">
                <cursor>
                   <Cursor fx:constant="TEXT" />
                </cursor>
             </TextField>
-            <TextField layoutX="339.0" layoutY="45.0" prefHeight="32.0" prefWidth="285.0" promptText="Member Name">
+            <TextField fx:id="txtMemberName" layoutX="339.0" layoutY="45.0" prefHeight="32.0" prefWidth="285.0" promptText="Member Name">
                <cursor>
                   <Cursor fx:constant="TEXT" />
                </cursor>
             </TextField>
-            <TextField layoutX="660.0" layoutY="45.0" prefHeight="32.0" prefWidth="285.0" promptText="NIC">
+            <TextField fx:id="txtMemberNic" layoutX="660.0" layoutY="45.0" prefHeight="32.0" prefWidth="285.0" promptText="NIC">
                <cursor>
                   <Cursor fx:constant="TEXT" />
                </cursor>
             </TextField>
-            <TextField layoutX="14.0" layoutY="101.0" prefHeight="32.0" prefWidth="285.0" promptText="DOB">
+            <TextField fx:id="txtMemberDob" layoutX="14.0" layoutY="101.0" prefHeight="32.0" prefWidth="285.0" promptText="DOB">
                <cursor>
                   <Cursor fx:constant="TEXT" />
                </cursor>
             </TextField>
-            <TextField layoutX="660.0" layoutY="101.0" prefHeight="32.0" prefWidth="285.0" promptText="Mobile">
+            <TextField fx:id="txtMemberMobile" layoutX="660.0" layoutY="101.0" prefHeight="32.0" prefWidth="285.0" promptText="Mobile">
                <cursor>
                   <Cursor fx:constant="TEXT" />
                </cursor>
             </TextField>
-            <TextField layoutX="340.0" layoutY="101.0" prefHeight="32.0" prefWidth="285.0" promptText="Address">
+            <TextField fx:id="txtMemberAddress" layoutX="340.0" layoutY="101.0" prefHeight="32.0" prefWidth="285.0" promptText="Address">
                <cursor>
                   <Cursor fx:constant="TEXT" />
                </cursor>

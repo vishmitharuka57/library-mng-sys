@@ -10,7 +10,7 @@ public class User {
     private String telephone;
     private String password;
 
-    public User() {
+    public User(String id, String name, String nic, String dob, String memberId, String memberName) {
     }
 
     public User(String name, String userName, String userId, String nic, String address, String role, String telephone, String password) {

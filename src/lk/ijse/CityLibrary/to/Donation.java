@@ -1,25 +1,25 @@
 package lk.ijse.CityLibrary.to;
 
 public class Donation {
-    private String donationId ;
-    private String bookId ;
-    private String bookName ;
-    private String categoryName ;
-    private String personName ;
-    private String personAddress ;
-    String nic ;
+    private String donationId  ;
+    private String donorName  ;
+    private String donorAddress  ;
+    private String donorNic  ;
+    private String bookName  ;
+    private String bookId  ;
+    private String categoryName  ;
 
     public Donation() {
     }
 
-    public Donation(String donationId, String bookId, String bookName, String categoryName, String personName, String personAddress, String nic) {
+    public Donation(String donationId, String donorName, String donorAddress, String donorNic, String bookName, String bookId, String categoryName) {
         this.donationId = donationId;
-        this.bookId = bookId;
+        this.donorName = donorName;
+        this.donorAddress = donorAddress;
+        this.donorNic = donorNic;
         this.bookName = bookName;
+        this.bookId = bookId;
         this.categoryName = categoryName;
-        this.personName = personName;
-        this.personAddress = personAddress;
-        this.nic = nic;
     }
 
     public String getDonationId() {
@@ -30,12 +30,28 @@ public class Donation {
         this.donationId = donationId;
     }
 
-    public String getBookId() {
-        return bookId;
+    public String getDonorName() {
+        return donorName;
     }
 
-    public void setBookId(String bookId) {
-        this.bookId = bookId;
+    public void setDonorName(String donorName) {
+        this.donorName = donorName;
+    }
+
+    public String getDonorAddress() {
+        return donorAddress;
+    }
+
+    public void setDonorAddress(String donorAddress) {
+        this.donorAddress = donorAddress;
+    }
+
+    public String getDonorNic() {
+        return donorNic;
+    }
+
+    public void setDonorNic(String donorNic) {
+        this.donorNic = donorNic;
     }
 
     public String getBookName() {
@@ -46,6 +62,14 @@ public class Donation {
         this.bookName = bookName;
     }
 
+    public String getBookId() {
+        return bookId;
+    }
+
+    public void setBookId(String bookId) {
+        this.bookId = bookId;
+    }
+
     public String getCategoryName() {
         return categoryName;
     }
@@ -54,32 +78,16 @@ public class Donation {
         this.categoryName = categoryName;
     }
 
-    public String getPersonName() {
-        return personName;
-    }
-
-    public void setPersonName(String personName) {
-        this.personName = personName;
-    }
-
-    public String getPersonAddress() {
-        return personAddress;
-    }
-
-    public void setPersonAddress(String personAddress) {
-        this.personAddress = personAddress;
-    }
-
     @Override
     public String toString() {
         return "Donation{" +
                 "donationId='" + donationId + '\'' +
-                ", bookId='" + bookId + '\'' +
+                ", donorName='" + donorName + '\'' +
+                ", donorAddress='" + donorAddress + '\'' +
+                ", donorNic='" + donorNic + '\'' +
                 ", bookName='" + bookName + '\'' +
+                ", bookId='" + bookId + '\'' +
                 ", categoryName='" + categoryName + '\'' +
-                ", personName='" + personName + '\'' +
-                ", personAddress='" + personAddress + '\'' +
-                ", nic='" + nic + '\'' +
                 '}';
     }
 }
